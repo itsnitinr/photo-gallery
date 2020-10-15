@@ -16,4 +16,6 @@ export default app;
 
 const storage = firebase.storage();
 const firestore = firebase.firestore();
-export { storage, firestore };
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+
+export { storage, firestore, timestamp };
